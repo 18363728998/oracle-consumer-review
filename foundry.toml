@@ -2,9 +2,11 @@
 src = "src"
 out = "out"
 libs = ["lib"]
-solc = "./tools/solc.sh"
-optimizer = true
+solc = "0.8.26"
 bytecode_hash = "none"
+
+[profile.deploy]
+ffi = true
 
 [fmt]
 line_length = 120
